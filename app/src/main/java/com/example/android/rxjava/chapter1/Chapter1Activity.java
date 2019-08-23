@@ -1,10 +1,11 @@
-package com.example.android.rxjava;
+package com.example.android.rxjava.chapter1;
 
 import android.annotation.SuppressLint;
 import android.widget.EditText;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import com.example.android.rxjava.R;
 import com.jakewharton.rxbinding3.widget.RxTextView;
 
 public class Chapter1Activity extends AppCompatActivity {
