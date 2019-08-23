@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.example.android.rxjava.chapter1.Chapter1Activity
+import com.example.android.rxjava.chapter2.Chapter2Activity
 import org.jetbrains.anko.find
 
 class MainActivity : AppCompatActivity() {
@@ -13,9 +14,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val button: Button = find(R.id.chapter1)
-        button.setOnClickListener {
+        val chapter1Button: Button = find(R.id.chapter1)
+        chapter1Button.setOnClickListener {
             startActivity(Intent(this, Chapter1Activity::class.java))
+        }
+
+        val chapter2Button: Button = find(R.id.chapter2)
+        chapter2Button.setOnClickListener {
+            startActivity(Intent(this, Chapter2Activity::class.java))
         }
     }
 }
